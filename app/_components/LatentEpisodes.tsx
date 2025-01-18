@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { ChevronRight } from 'lucide-react';
 import cover from '../../public/assets/latent-cover-image.png';
+import cover2 from '../../public/assets/cover3.jpg'
 
 type Card = {
   id: number;
@@ -14,17 +15,17 @@ type Card = {
 const LatentEpisodes: React.FC = () => {
   const cards: Card[] = [
     { id: 1, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
-    { id: 2, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
+    { id: 2, image: cover2, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
     { id: 3, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
     { id: 4, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 5, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+    { id: 5, image: cover2, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
     { id: 6, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
-    { id: 7, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
-    { id: 8, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 9, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+    { id: 7, image: cover2, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
+    { id: 8, image: cover2, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+    { id: 9, image: cover2, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
     { id: 10, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
     { id: 11, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
-    { id: 12, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
+    { id: 12, image: cover2, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
   ];
 
   const [visibleCards, setVisibleCards] = useState<Card[]>([]);

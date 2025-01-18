@@ -5,6 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 import { ChevronRight } from 'lucide-react';
 import cover from '../../../public/assets/latent-cover-image.png';
 import lock from '../../../public/assets/Lock.png';
+import cover2 from '../../../public/assets/cover2.jpg' 
 
 interface Card {
   id: number;
@@ -13,24 +14,24 @@ interface Card {
 }
 
 const PremiumEpisodesList: React.FC = () => {
-  const cards: Card[] = [
-    { id: 1, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
-    { id: 2, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
-    { id: 3, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
-    { id: 4, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
-    { id: 5, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
-    { id: 6, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
-    { id: 7, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 8, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 9, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 10, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 11, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 12, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
-    { id: 13, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
-    { id: 14, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
-    { id: 15, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
-    { id: 16, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
-  ];
+    const cards: Card[] = [
+        { id: 1, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
+        { id: 2, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
+        { id: 3, image: cover2, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
+        { id: 4, image: cover2, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
+        { id: 5, image: cover, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
+        { id: 6, image: cover2, description: "India's Got Latent ft. @Ashish Chanchalani, @Beer Biceps, @Rebel Kid" },
+        { id: 7, image: cover2, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+        { id: 8, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+        { id: 9, image: cover2, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+        { id: 10, image: cover2, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+        { id: 11, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+        { id: 12, image: cover, description: "India's Got Latent ft. @Ravi Gupta, @Beer Biceps, @Rebel Kid" },
+        { id: 13, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
+        { id: 14, image: cover2, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
+        { id: 15, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
+        { id: 16, image: cover, description: "India's Got Latent ft. @Tanmay Bhatt, @Nishant Tanwar, @Zakin Khan" },
+    ];
 
   const [visibleCards, setVisibleCards] = useState<Card[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
