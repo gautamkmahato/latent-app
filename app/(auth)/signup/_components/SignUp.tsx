@@ -15,12 +15,11 @@ const SignUp: React.FC = () => {
               hover:bg-[#C4A028] transition-colors duration-200"
         >
           Login
-        </button>
+        </button> 
   
         <SignUpModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          title="Example Modal"
         >
           <SignUpForm />
         </SignUpModal>

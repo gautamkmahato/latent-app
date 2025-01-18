@@ -38,7 +38,7 @@ const LatentEpisodes: React.FC = () => {
 
   const updateVisibleCards = (startIndex: number) => {
     const wrappedIndex = startIndex % cards.length;
-    const newVisibleCards: Card[] = [];
+    const newVisibleCards: Card[] | any = [];
 
     for (let i = 0; i < cardsPerSet; i++) {
       const index = (wrappedIndex + i) % cards.length;

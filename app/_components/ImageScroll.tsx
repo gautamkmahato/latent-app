@@ -18,8 +18,9 @@ const ImageScroll: React.FC = () => {
   // Create a continuous loop for images
   useEffect(() => {
     const interval = setInterval(() => {
-      setImages(prevImages => {
-        const updatedImages = [...prevImages.slice(1), prevImages[0]];
+      setImages((prevImages: string[]) => {
+        // Explicitly type the return value as string[]
+        const updatedImages: string[] | any = [...prevImages.slice(1), prevImages[0]];
         return updatedImages;
       });
     }, 2000); // Slow down the speed (2000 ms = 2 seconds per image)
